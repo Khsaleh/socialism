@@ -16,7 +16,7 @@ public class FullName {
         boolean found = false;
         this.full_name = full;
         String[] namesArray = {"khaled saleh","fadi abdeen", "hussam yousef"};
-        for( int i=0;i<=namesArray.length;i++){
+        for( int i=0;i<namesArray.length;i++){
             
             if (namesArray[i].equals(full)){
                 found = true;
