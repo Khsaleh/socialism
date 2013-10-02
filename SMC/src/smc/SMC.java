@@ -24,7 +24,7 @@ public class SMC {
         System.out.print("Enter Your Age");
         age= user_input.nextInt();
         String full_name = first_name + " " + last_name;
-        Full_name full = new Full_name();
+        FullName full = new FullName();
         full.check_name(full_name);
         AgerVerification age_1 = new AgerVerification();
         age_1.verify(age);
