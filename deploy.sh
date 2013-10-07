@@ -1,1 +1,1 @@
-mvn install:install-file -Dfile=/c/Users/fabdin/Documents/NetBeansProjects/socialism/SMC/dist/SMC.jar -DpomFile=/c/Users/fabdin/Documents/NetBeansProjects/socialism/pom.xml
+mvn install:install-file -Dfile=SMC.jar -DpomFile=pom.xml
