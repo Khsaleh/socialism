@@ -12,15 +12,22 @@ import javax.servlet.http.HttpServletRequest;
  */
 public class ApplicationsReader {
 
-    public ApplicationsReader() {
+	private String filePath;
+    public ApplicationsReader(String filePath) {
+		this.filePath=filePath;
     }
 
-    public List<Application> getApplications(String strFile) {
+	/**
+	 * 
+	 * This method will read the applications from the file and parse the data
+	 * @return List of <code>Application</code>
+	 */
+    public List<Application> getApplications() {
 
         List<Application> applications = new ArrayList<Application>();
         try {
             //csv file containing data
-            CSVReader reader = new CSVReader(new FileReader(strFile));
+            CSVReader reader = new CSVReader(new FileReader(filePath));
             String[] nextLine;
             int lineNumber = 0;
             List<String> fields = new ArrayList<String>();
